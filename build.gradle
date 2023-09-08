@@ -1,5 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
+    ext.kotlin_version= '1.3.72'
     repositories {
         google()
         mavenCentral()
@@ -15,4 +16,19 @@ buildscript {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    activityVersion = '3.2.1'
+    appCompatVersion = '3.1.1'
+    constraintLayoutVersion = '2.1.2'
+    coreTestingVersion = '2.3.1'
+    coroutines = '3.3.1'
+    lifecycleVersion = '2.1.3'
+    materialVersion = '3.1.1'
+    roomVersion = '2.1.1'
+// testing
+    junitVersion = '2.31.2'
+    espressoVersion = '1.3.1'
+    androidxJunitVersion = '3.3.2'
 }
